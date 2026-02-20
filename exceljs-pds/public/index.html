@@ -32,7 +32,7 @@
         <i>
           <b>CS Form No. 212 </b>
           <br />
-          <small> Revised 2017</small></i
+          <small> Revised 2025</small></i
         >
       </p>
       <div class="pds-title">PERSONAL DATA SHEET</div>
@@ -62,8 +62,8 @@
       <table class="pds-table">
         <tr>
           <td class="gray-cell" style="width: 20%">
-            2. SURNAME<br />
-            FIRST NAME<br />MIDDLE NAME
+            1. SURNAME<br />
+            2. FIRST NAME<br />MIDDLE NAME
           </td>
           <td colspan="2">
             <input type="text" class="form-control" id="surname" style="border-bottom: 1px solid #000" />
@@ -76,11 +76,128 @@
           </td>
         </tr>
         <tr>
-          <td class="gray-cell">3. DATE OF BIRTH<br />(mm/dd/yyyy)</td>
+          <td class="gray-cell">3. DATE OF BIRTH<br />(dd/mm/yyyy)</td>
           <td>
             <input type="date" class="form-control" id="dateOfBirth" />
           </td>
-          <td class="gray-cell" rowspan="2" style="width: 20%">
+          <td class="gray-cell">13. PhilSys Number (PSN):</td>
+          <td><input type="text" class="form-control" id="sssNo" /></td>
+
+          
+        </tr>
+        <tr>
+          <td class="gray-cell">4. PLACE OF BIRTH</td>
+          <td>
+            <input type="text" class="form-control w-100 h-100" id="placeOfBirth" />
+          </td>
+                    <td class="gray-cell">14. TIN NO.</td>
+          <td><input type="text" class="form-control" id="tinNo" /></td>
+          
+        </tr>
+        <tr>
+          <td class="gray-cell">5. SEX</td>
+          <td>
+            <div class="form-check ms-4">
+              <input
+                type="radio"
+                class="form-check-input black-border-checkbox"
+                name="sex"
+                id="sexMale"
+                value="Male"
+              />
+              <label class="form-check-label" for="sexMale">Male</label>
+            </div>
+            <div class="form-check ms-4">
+              <input
+                type="radio"
+                class="form-check-input black-border-checkbox"
+                name="sex"
+                id="sexFemale"
+                value="Female"
+              />
+              <label class="form-check-label" for="sexFemale">Female</label>
+            </div>
+          </td>
+                   <td class="gray-cell">15. AGENCY EMPLOYEE NO.</td>
+          <td><input type="text" class="form-control" id="agencyEmpNo" /></td>
+        </tr>
+        <tr>
+        <td class="gray-cell">6. CIVIL STATUS</td>
+          <td>
+            <div class="d-flex flex-lg-row flex-column justify-content-between">
+              <div>
+                <div class="form-check ms-4">
+                  <input
+                    type="radio"
+                    class="form-check-input black-border-checkbox"
+                    name="civilStatus"
+                    id="civilSingle"
+                    value="Single"
+                  />
+                  <label class="form-check-label" for="civilSingle"
+                    >Single</label
+                  >
+                </div>
+                <div class="form-check ms-4">
+                  <input
+                    type="radio"
+                    class="form-check-input black-border-checkbox"
+                    name="civilStatus"
+                    id="civilMarried"
+                    value="Married"
+                  />
+                  <label class="form-check-label" for="civilMarried"
+                    >Married</label
+                  >
+                </div>
+              </div>
+              <div>
+                <div class="form-check ms-4">
+                  <input
+                    type="radio"
+                    class="form-check-input black-border-checkbox"
+                    name="civilStatus"
+                    id="civilWidowed"
+                    value="Widowed"
+                  />
+                  <label class="form-check-label" for="civilWidowed"
+                    >Widowed</label
+                  >
+                </div>
+                <div class="form-check ms-4">
+                  <input
+                    type="radio"
+                    class="form-check-input black-border-checkbox"
+                    name="civilStatus"
+                    id="civilSeparated"
+                    value="Separated"
+                  />
+                  <label class="form-check-label" for="civilSeparated"
+                    >Separated</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-check ms-4 mt-1">
+              <input
+                type="radio"
+                class="form-check-input black-border-checkbox"
+                name="civilStatus"
+                id="civilOther"
+                value="Other"
+              />
+              <label class="form-check-label" for="civilOther">Other/s:</label>
+              <input
+                type="text"
+                class="form-control d-inline-block ms-2"
+                id="civilOtherInput"
+                style="width: 200px; display: none"
+                placeholder="Please specify"
+                disabled
+              />
+            </div>
+          </td>
+           <td class="gray-cell" rowspan="2" style="width: 20%">
             16. CITIZENSHIP<br />
             <small
               >If holder of dual citizenship,<br />please indicate the
@@ -349,115 +466,15 @@
             </select>
           </td>
         </tr>
-        <tr>
-          <td class="gray-cell">4. PLACE OF BIRTH</td>
-          <td>
-            <input type="text" class="form-control w-100 h-100" id="placeOfBirth" />
-          </td>
-        </tr>
-        <tr>
-          <td class="gray-cell">5. SEX</td>
-          <td>
-            <div class="form-check ms-4">
-              <input
-                type="radio"
-                class="form-check-input black-border-checkbox"
-                name="sex"
-                id="sexMale"
-                value="Male"
-              />
-              <label class="form-check-label" for="sexMale">Male</label>
-            </div>
-            <div class="form-check ms-4">
-              <input
-                type="radio"
-                class="form-check-input black-border-checkbox"
-                name="sex"
-                id="sexFemale"
-                value="Female"
-              />
-              <label class="form-check-label" for="sexFemale">Female</label>
-            </div>
-          </td>
-          <td class="gray-cell">6. CIVIL STATUS</td>
-          <td>
-            <div class="d-flex flex-lg-row flex-column justify-content-between">
-              <div>
-                <div class="form-check ms-4">
-                  <input
-                    type="radio"
-                    class="form-check-input black-border-checkbox"
-                    name="civilStatus"
-                    id="civilSingle"
-                    value="Single"
-                  />
-                  <label class="form-check-label" for="civilSingle"
-                    >Single</label
-                  >
-                </div>
-                <div class="form-check ms-4">
-                  <input
-                    type="radio"
-                    class="form-check-input black-border-checkbox"
-                    name="civilStatus"
-                    id="civilMarried"
-                    value="Married"
-                  />
-                  <label class="form-check-label" for="civilMarried"
-                    >Married</label
-                  >
-                </div>
-              </div>
-              <div>
-                <div class="form-check ms-4">
-                  <input
-                    type="radio"
-                    class="form-check-input black-border-checkbox"
-                    name="civilStatus"
-                    id="civilWidowed"
-                    value="Widowed"
-                  />
-                  <label class="form-check-label" for="civilWidowed"
-                    >Widowed</label
-                  >
-                </div>
-                <div class="form-check ms-4">
-                  <input
-                    type="radio"
-                    class="form-check-input black-border-checkbox"
-                    name="civilStatus"
-                    id="civilSeparated"
-                    value="Separated"
-                  />
-                  <label class="form-check-label" for="civilSeparated"
-                    >Separated</label
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="form-check ms-4 mt-1">
-              <input
-                type="radio"
-                class="form-check-input black-border-checkbox"
-                name="civilStatus"
-                id="civilOther"
-                value="Other"
-              />
-              <label class="form-check-label" for="civilOther">Other/s:</label>
-              <input
-                type="text"
-                class="form-control d-inline-block ms-2"
-                id="civilOtherInput"
-                style="width: 200px; display: none"
-                placeholder="Please specify"
-                disabled
-              />
-            </div>
-          </td>
-        </tr>
+     
         <tr>
           <td class="gray-cell">7. HEIGHT (m)</td>
           <td><input type="text" class="form-control" id="height" /></td>
+          
+        </tr>
+        <tr>
+          <td class="gray-cell">8. WEIGHT (kg)</td>
+          <td><input type="text" class="form-control" id="weight" /></td>
           <td class="gray-cell">17. RESIDENTIAL ADDRESS</td>
           <td>
             <input
@@ -480,10 +497,11 @@
             />
             <input type="text" class="form-control" id="resZip" placeholder="ZIP Code" />
           </td>
+          
         </tr>
         <tr>
-          <td class="gray-cell">8. WEIGHT (kg)</td>
-          <td><input type="text" class="form-control" id="weight" /></td>
+          <td class="gray-cell">9. BLOOD TYPE</td>
+          <td><input type="text" class="form-control" id="bloodType" /></td>
           <td class="gray-cell">18. PERMANENT ADDRESS</td>
           <td>
             <input
@@ -506,36 +524,31 @@
             />
             <input type="text" class="form-control" id="permZip" placeholder="ZIP Code" />
           </td>
+         
         </tr>
         <tr>
-          <td class="gray-cell">9. BLOOD TYPE</td>
-          <td><input type="text" class="form-control" id="bloodType" /></td>
-          <td class="gray-cell">19. TELEPHONE NO.</td>
-          <td><input type="text" class="form-control" id="telNo" /></td>
-        </tr>
-        <tr>
-          <td class="gray-cell">10. GSIS ID NO.</td>
+          <td class="gray-cell">10. UMID ID NO.</td>
           <td><input type="text" class="form-control" id="gsisId" /></td>
-          <td class="gray-cell">20. MOBILE NO.</td>
-          <td><input type="text" class="form-control" id="mobileNo" /></td>
+           <td class="gray-cell">19. TELEPHONE NO.</td>
+          <td><input type="text" class="form-control" id="telNo" /></td>
+          
         </tr>
         <tr>
           <td class="gray-cell">11. PAG-IBIG ID NO.</td>
           <td><input type="text" class="form-control" id="pagibigId" /></td>
-          <td class="gray-cell">21. E-MAIL ADDRESS (if any)</td>
-          <td><input type="email" class="form-control" id="email" /></td>
+          <td class="gray-cell">20. MOBILE NO.</td>
+          <td><input type="text" class="form-control" id="mobileNo" /></td>
+          
         </tr>
         <tr>
           <td class="gray-cell">12. PHILHEALTH NO.</td>
           <td><input type="text" class="form-control" id="philhealthNo" /></td>
-          <td class="gray-cell">14. TIN NO.</td>
-          <td><input type="text" class="form-control" id="tinNo" /></td>
+          <td class="gray-cell">21. E-MAIL ADDRESS (if any)</td>
+          <td><input type="email" class="form-control" id="email" /></td>
         </tr>
-        <tr>
-          <td class="gray-cell">13. SSS NO.</td>
-          <td><input type="text" class="form-control" id="sssNo" /></td>
-          <td class="gray-cell">15. AGENCY EMPLOYEE NO.</td>
-          <td><input type="text" class="form-control" id="agencyEmpNo" /></td>
+    
+           <tr>
+          
         </tr>
       </table>
       <!-- Section II. FAMILY BACKGROUND -->
